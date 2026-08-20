@@ -303,3 +303,354 @@ footer {
     padding: 30px 5%;
     text-align: center;
 }
+/* =========================
+   PÁGINA DE LOGIN
+========================= */
+
+.login-page {
+    min-height: 100vh;
+    background: #faf9f5;
+}
+
+
+/* VOLTAR */
+
+.back-home {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.back-home:hover {
+    color: #008f6a;
+}
+
+
+/* CONTAINER */
+
+.login-container {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+}
+
+
+/* CARD */
+
+.login-card {
+    width: 100%;
+    max-width: 430px;
+
+    background: white;
+
+    border: 1px solid #ddd;
+    border-radius: 16px;
+
+    padding: 40px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+/* CABEÇALHO */
+
+.login-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.login-icon {
+    display: inline-flex;
+
+    width: 50px;
+    height: 50px;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #008f6a;
+    color: white;
+
+    border-radius: 12px;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+.login-header h1 {
+    font-size: 26px;
+
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    color: #666;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* INPUTS */
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #008f6a;
+}
+
+
+/* SENHA */
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    padding-right: 50px;
+}
+
+.show-password {
+    position: absolute;
+
+    right: 10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background: transparent;
+
+    font-size: 16px;
+}
+
+
+/* OPÇÕES */
+
+.login-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+
+    font-size: 13px;
+}
+
+.login-options a {
+    color: #008f6a;
+
+    text-decoration: none;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+}
+
+
+/* BOTÃO ENTRAR */
+
+.btn-login-submit {
+    width: 100%;
+
+    background: #008f6a;
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.btn-login-submit:hover {
+    background: #007457;
+}
+
+
+/* DIVISOR */
+
+.login-divider {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 25px 0;
+
+    color: #999;
+
+    font-size: 13px;
+}
+
+.login-divider::before,
+.login-divider::after {
+    content: "";
+
+    height: 1px;
+
+    flex: 1;
+
+    background: #ddd;
+}
+
+
+/* GOOGLE */
+
+.btn-google {
+    width: 100%;
+
+    background: white;
+
+    border: 1px solid #ccc;
+
+    padding: 13px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.btn-google:hover {
+    background: #f5f5f5;
+}
+
+.btn-google span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* CRIAR CONTA */
+
+.create-account {
+    text-align: center;
+
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    color: #666;
+}
+
+.create-account a {
+    color: #008f6a;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 600px) {
+
+    .login-card {
+        padding: 30px 20px;
+    }
+
+    .login-options {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+}
+
+/* =========================
+   PÁGINA DE CADASTRO
+========================= */
+
+.input-group select {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    background: white;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+.input-group select:focus {
+    border-color: #008f6a;
+}
+
+
+/* TERMOS */
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 8px;
+
+    font-size: 13px;
+
+    color: #666;
+
+    line-height: 1.4;
+
+    margin-bottom: 25px;
+
+    cursor: pointer;
+}
+
+.terms input {
+    margin-top: 2px;
+}
+
+
+/* AJUSTE PARA O CARD DE CADASTRO */
+
+.login-card {
+    margin: 30px 0;
+}

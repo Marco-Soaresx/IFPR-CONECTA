@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Criar conta | IFPR Conecta</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>✦</span>
+            <strong>IFPR Conecta</strong>
+        </div>
+
+        <a href="index.html" class="back-home">
+            ← Voltar para o início
+        </a>
+
+    </header>
+
+
+    <main class="login-container">
+
+        <section class="login-card">
+
+            <div class="login-header">
+
+                <span class="login-icon">✦</span>
+
+                <h1>Crie sua conta</h1>
+
+                <p>
+                    Comece agora a encontrar oportunidades
+                    feitas para você.
+                </p>
+
+            </div>
+
+
+            <form id="cadastroForm">
+
+
+                <div class="input-group">
+
+                    <label for="nome">
+                        Nome completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Digite seu nome completo"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="emailCadastro">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="emailCadastro"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="tipoUsuario">
+                        Você é
+                    </label>
+
+                    <select id="tipoUsuario" required>
+
+                        <option value="">
+                            Selecione uma opção
+                        </option>
+
+                        <option value="aluno">
+                            Aluno do IFPR
+                        </option>
+
+                        <option value="empresa">
+                            Empresa
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="senhaCadastro">
+                        Crie uma senha
+                    </label>
+
+                    <div class="password-container">
+
+                        <input
+                            type="password"
+                            id="senhaCadastro"
+                            placeholder="Crie uma senha"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="mostrarSenhaCadastro"
+                            class="show-password"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="confirmarSenha">
+                        Confirme sua senha
+                    </label>
+
+                    <div class="password-container">
+
+                        <input
+                            type="password"
+                            id="confirmarSenha"
+                            placeholder="Digite sua senha novamente"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <label class="terms">
+
+                    <input
+                        type="checkbox"
+                        id="termos"
+                        required
+                    >
+
+                    <span>
+                        Concordo com os termos de uso
+                        e política de privacidade.
+                    </span>
+
+                </label>
+
+
+                <button
+                    type="submit"
+                    class="btn-login-submit"
+                >
+                    Criar minha conta
+                </button>
+
+            </form>
+
+
+            <p class="create-account">
+
+                Já possui uma conta?
+
+                <a href="entrar.html">
+                    Entrar
+                </a>
+
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,12 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Entrar | IFPR Conecta</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+
+<body class="login-page">
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>✦</span>
+            <strong>IFPR Conecta</strong>
+        </div>
+
+        <a href="index.html" class="back-home">
+            ← Voltar para o início
+        </a>
+
+    </header>
+
+
+    <main class="login-container">
+
+        <section class="login-card">
+
+            <div class="login-header">
+
+                <span class="login-icon">✦</span>
+
+                <h1>Bem-vindo de volta!</h1>
+
+                <p>
+                    Entre na sua conta para continuar
+                    encontrando oportunidades.
+                </p>
+
+            </div>
+
+
+            <form id="loginForm">
+
+                <div class="input-group">
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <div class="password-container">
+
+                        <input
+                            type="password"
+                            id="senha"
+                            placeholder="Digite sua senha"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="mostrarSenha"
+                            class="show-password"
+                        >
+                            👁
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="login-options">
+
+                    <label class="remember">
+
+                        <input type="checkbox">
+
+                        Lembrar de mim
+
+                    </label>
+
+
+                    <a href="#">
+                        Esqueci minha senha
+                    </a>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn-login-submit"
+                >
+                    Entrar
+                </button>
+
+            </form>
+
+
+            <div class="login-divider">
+
+                <span>ou</span>
+
+            </div>
+
+
+            <button class="btn-google">
+
+                <span>G</span>
+
+                Continuar com Google
+
+            </button>
+
+
+            <p class="create-account">
+
+                Ainda não possui uma conta?
+
+                <a href="#">
+                    Criar conta
+                </a>
+
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
