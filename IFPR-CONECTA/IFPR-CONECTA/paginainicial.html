@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vagas e bolsas do IFPR | IFPR Conecta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="#" class="brand">
+                <img src="logoif.png" alt="Logo IFPR Conecta" class="logo-img">
+                IFPR Conecta
+            </a>
+
+            <nav class="nav">
+                <a href="#" class="active">Vagas</a>
+                <a href="#">Panorama</a>
+                <a href="#">Empresas</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- DESTAQUE -->
+    <section class="hero">
+        <div class="hero-inner">
+            <p class="hero-kicker">
+                Paraná · IFPR Conecta
+            </p>
+            <h1>
+                Sua próxima oportunidade começa aqui.
+            </h1>
+            <p>
+                Estágios, empregos, bolsas e projetos de extensão
+                abertos para estudantes do IFPR.
+            </p>
+
+
+            <!-- BUSCA -->
+            <div class="search-bar">
+
+                <div class="search-input-wrap">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <circle cx="11" cy="11" r="8"></circle>
+
+                        <path d="m21 21-4.3-4.3"></path>
+
+                    </svg>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        class="search-input"
+                        placeholder="Buscar por cargo, empresa ou área..."
+                    >
+
+                </div>
+
+
+                <button class="filter-toggle" id="filterToggle">
+                    <svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14v6z"></path>
+
+                    </svg>
+                    Filtros
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main">
+
+
+        <!-- FILTROS -->
+        <aside
+            class="sidebar"
+            id="sidebar"
+        >
+
+            <div class="sidebar-header">
+
+                <h2>
+                    Filtros
+                </h2>
+
+                <button
+                    class="clear-btn"
+                    id="clearFilters"
+                    style="display:none"
+                >
+
+                    <svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+
+                    </svg>
+                    Limpar
+                </button>
+            </div>
+            <div id="filterGroups"></div>
+
+        </aside>
+
+
+        <!-- RESULTADOS -->
+        <section>
+
+            <div class="results-header">
+
+                <h2 id="resultsTitle">
+                    Vagas encontradas
+                </h2>
+
+                <span
+                    class="active-count"
+                    id="activeCount"
+                ></span>
+
+            </div>
+
+
+            <div id="vagasList"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
