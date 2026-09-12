@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IFPR Conecta | Vagas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="img/logoif.png"alt="IFPR Conecta"class="logo-img">
+        </div>
+        <nav>
+            <a href="index.html">Vagas</a>
+            <a href="index.html#panorama">Panorama</a>
+            <a href="index.html#empresas">Empresas</a>
+        </nav>
+    
+        <div class="auth-buttons">
+            <a href="login.html" class="btn-secondary">
+                Entrar
+            </a>
+
+            <a href="cadastro.html" class="btn-primary">
+                Criar conta
+            </a>
+        </div>
+    
+    </header>
+
+
+    <!-- VAGAS POR CIDADE -->
+    <main class="vagas-cidade">
+
+        <section class="vagas-container">
+
+            <a href="index.html" class="voltar">
+                ← Voltar
+            </a>
+
+            <div class="titulo-cidade">
+
+                <h1>
+                    Vagas em <span id="cidadeNome"></span>
+                </h1>
+
+                <p>
+                    Encontre oportunidades disponíveis na cidade selecionada.
+                </p>
+
+            </div>
+
+
+            <!-- BUSCA -->
+            <div class="busca-vagas">
+
+                <input
+                    type="text"
+                    id="campoBusca"
+                    placeholder="Buscar vaga..."
+                >
+
+                <button id="btnBuscar">
+                    Buscar
+                </button>
+
+            </div>
+
+
+            <!-- CONTEÚDO -->
+            <div class="vagas-content">
+
+
+                <!-- FILTROS -->
+                <aside class="filtros">
+
+                    <h2>Filtros</h2>
+
+                    <div class="filtro">
+
+                        <h3>Tipo de vaga</h3>
+
+                        <label>
+                            <input type="checkbox" value="Estágio">
+                            Estágio
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Emprego">
+                            Emprego
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Pesquisa">
+                            Pesquisa
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Extensão">
+                            Extensão
+                        </label>
+
+                    </div>
+
+
+                    <div class="filtro">
+
+                        <h3>Modalidade</h3>
+
+                        <label>
+                            <input type="checkbox" value="Presencial">
+                            Presencial
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Híbrido">
+                            Híbrido
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="Remoto">
+                            Remoto
+                        </label>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        id="limparFiltros"
+                        class="limpar-filtros"
+                    >
+                        Limpar filtros
+                    </button>
+
+                </aside>
+
+
+                <!-- LISTA DE VAGAS -->
+                <section class="lista-vagas">
+
+                    <div class="lista-topo">
+
+                        <h2>
+                            Oportunidades
+                        </h2>
+
+                        <span id="quantidadeVagas">
+                            0 vagas
+                        </span>
+
+                    </div>
+
+                    <div
+                        id="listaVagas"
+                        class="cards-vagas"
+                    >
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script>
+        const cidadeURL = new URLSearchParams(window.location.search).get("cidade");
+    
+        if (cidadeURL) {
+            document.getElementById("cidadeNome").textContent = cidadeURL;
+        }
+    </script>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
