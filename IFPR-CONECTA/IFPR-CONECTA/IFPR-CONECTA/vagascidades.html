@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        IFPR Conecta | Vagas
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ============================== -->
+    <!-- HEADER -->
+    <!-- ============================== -->
+
+    <header class="navbar">
+
+
+        <div class="logo">
+
+            <a href="index.html">
+
+                <img
+                    src="img/logoif.png"
+                    alt="Logo IFPR Conecta"
+                    class="logo-img"
+                >
+
+            </a>
+
+            <strong>
+                IFPR Conecta
+            </strong>
+
+        </div>
+
+
+        <nav>
+            <a href="index.html#empresas">
+                Empresas
+            </a>
+
+        </nav>
+    </header>
+
+    <main class="vagas-cidade">
+
+
+        <section class="vagas-container">
+
+
+            <!-- VOLTAR -->
+
+            <a
+                href="paginainicial.html"
+                class="voltar"
+            >
+                ← Voltar
+            </a>
+
+
+            <!-- TÍTULO -->
+
+            <div class="titulo-cidade">
+
+                <h1>
+
+                    Vagas em
+                    <span id="cidadeNome"></span>
+
+                </h1>
+
+
+                <p>
+                    Encontre oportunidades disponíveis
+                    na cidade selecionada.
+                </p>
+
+            </div>
+
+
+            <!-- BUSCA -->
+
+            <div class="busca-vagas">
+
+
+                <input
+                    type="text"
+                    id="campoBusca"
+                    placeholder="Buscar vaga..."
+                >
+
+
+                <button id="btnBuscar">
+                    Buscar
+                </button>
+
+
+            </div>
+
+
+            <!-- ============================== -->
+            <!-- ÁREA DE VAGAS -->
+            <!-- ============================== -->
+
+            <div class="vagas-content">
+
+
+                <!-- FILTROS -->
+
+                <aside class="filtros">
+
+
+                    <h2>
+                        Filtros
+                    </h2>
+
+
+                    <!-- TIPO -->
+
+                    <div class="filtro">
+
+
+                        <h3>
+                            Tipo de vaga
+                        </h3>
+
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                value="Estágio"
+                            >
+
+                            Estágio
+
+                        </label>
+
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                value="Emprego"
+                            >
+
+                            Emprego
+
+                        </label>
+
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                value="Pesquisa"
+                            >
+
+                            Pesquisa
+
+                        </label>
+
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                value="Extensão"
+                            >
+
+                            Extensão
+
+                        </label>
+
+
+                    </div>
+
+
+                    <!-- MODALIDADE -->
+
+                    <div class="filtro">
+
+
+                        <h3>
+                            Modalidade
+                        </h3>
+
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                value="Presencial"
+                            >
+
+                            Presencial
+
+                        </label>
+
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                value="Híbrido"
+                            >
+
+                            Híbrido
+
+                        </label>
+
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                value="Remoto"
+                            >
+
+                            Remoto
+
+                        </label>
+
+
+                    </div>
+
+
+                    <!-- LIMPAR -->
+
+                    <button
+                        type="button"
+                        id="limparFiltros"
+                        class="limpar-filtros"
+                    >
+                        Limpar filtros
+                    </button>
+
+                </aside>
+
+                <section class="lista-vagas">
+
+                    <div class="lista-topo">
+                        <h2>
+                            Oportunidades
+                        </h2>
+                        <span id="quantidadeVagas">
+                            0 vagas
+                        </span>
+
+                    </div>
+                    <div
+                        id="listaVagas"
+                        class="cards-vagas"
+                    ></div>
+                </section>
+            </div>
+        </section>
+            <section class="faq faq-cidade">
+
+                <div class="faq-title">
+                    <h2>
+                        Perguntas frequentes sobre o IFPR Conecta
+                    </h2>
+                </div>
+
+                <div class="faq-list">
+
+                    <details>
+                        <summary>O que é o IFPR Conecta?</summary>
+                        <p>
+                            Uma plataforma para conectar alunos do IFPR
+                            a oportunidades.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Como procurar vagas no IFPR Conecta?</summary>
+                        <p>
+                            Utilize os filtros disponíveis para encontrar
+                            oportunidades.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Quais tipos de vagas encontro no IFPR Conecta?</summary>
+                        <p>
+                            Estágios, empregos e projetos relacionados
+                            às áreas dos cursos.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Qual o intuito da plataforma?</summary>
+                        <p>
+                            Facilitar a conexão entre estudantes e empresas.
+                        </p>
+                    </details>
+
+                </div>
+
+            </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
