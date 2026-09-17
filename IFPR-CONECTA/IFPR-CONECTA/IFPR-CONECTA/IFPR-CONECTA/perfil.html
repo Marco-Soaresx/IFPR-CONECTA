@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Perfil - IFPR Conecta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <a href="index.html">
+
+                <img
+                    src="img/logoif.png"
+                    alt="Logo IFPR"
+                    class="logo-img"
+                >
+
+            </a>
+
+            <strong>
+                IFPR Conecta
+            </strong>
+
+        </div>
+        <nav>
+            <a href="paginainicial.html">
+                Voltar
+            </a>
+        </nav>
+
+    </header>
+    <main class="conteudo">
+        <div class="container">
+            <div class="titulo">
+
+                <h1>
+                    Meu perfil
+                </h1>
+                <p>
+                    Gerencie suas informações pessoais e profissionais.
+                </p>
+
+            </div>
+
+
+
+            <!-- =========================
+                 CARD DO PERFIL
+            ========================= -->
+
+            <section class="perfil-card">
+
+
+                <!-- TOPO DO PERFIL -->
+
+                <div class="perfil-topo">
+
+
+                    <div class="foto-container">
+
+                        <img
+                            id="fotoGrande"
+                            src="img/usuario.png"
+                            alt="Foto de perfil"
+                            class="foto-grande"
+                        >
+
+
+                        <input
+                            type="file"
+                            id="inputFoto"
+                            accept="image/*"
+                            hidden
+                        >
+
+
+                        <button
+                            type="button"
+                            id="alterarFoto"
+                            class="botao-foto"
+                        >
+                            Alterar foto
+                        </button>
+
+                    </div>
+
+
+
+                    <div class="dados-topo">
+
+                        <h2 id="nomeTopo">
+                            Carregando...
+                        </h2>
+
+                        <p id="emailTopo">
+                            Carregando...
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =========================
+                     FORMULÁRIO
+                ========================= -->
+
+                <form id="perfilForm">
+
+
+                    <!-- =========================
+                         INFORMAÇÕES PESSOAIS
+                    ========================= -->
+
+                    <div class="secao">
+
+                        <h3>
+                            Informações pessoais
+                        </h3>
+
+
+                        <div class="campos">
+
+
+                            <!-- E-MAIL -->
+
+                            <div class="campo">
+
+                                <label for="email">
+                                    E-mail
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    readonly
+                                    class="somente-leitura"
+                                >
+
+                            </div>
+
+
+
+                            <!-- TELEFONE -->
+
+                            <div class="campo">
+
+                                <label for="telefone">
+                                    Telefone
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="telefone"
+                                    placeholder="(00) 00000-0000"
+                                >
+
+                            </div>
+
+
+
+                            <!-- CIDADE -->
+
+                            <div class="campo">
+
+                                <label for="cidade">
+                                    Cidade
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="cidade"
+                                    placeholder="Sua cidade"
+                                >
+
+                            </div>
+
+
+
+                            <!-- CAMPUS -->
+
+                            <div class="campo">
+
+                                <label for="campus">
+                                    Campus IFPR
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="campus"
+                                    placeholder="Ex: Paranaguá"
+                                >
+
+                            </div>
+
+
+
+                            <!-- CURSO -->
+
+                            <div class="campo">
+
+                                <label for="curso">
+                                    Curso
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="curso"
+                                    placeholder="Ex: TADS"
+                                >
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =========================
+                         INFORMAÇÕES PROFISSIONAIS
+                    ========================= -->
+
+                    <div class="secao">
+
+                        <h3>
+                            Informações profissionais
+                        </h3>
+
+
+                        <div class="campos">
+
+
+                            <!-- ÁREA -->
+
+                            <div class="campo">
+
+                                <label for="area">
+                                    Área de interesse
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="area"
+                                    placeholder="Ex: Tecnologia"
+                                >
+
+                            </div>
+
+
+
+                            <!-- TIPO DE OPORTUNIDADE -->
+
+                            <div class="campo">
+
+                                <label for="tipoOportunidade">
+                                    Tipo de oportunidade
+                                </label>
+
+                                <select id="tipoOportunidade">
+
+                                    <option value="">
+                                        Selecione
+                                    </option>
+
+                                    <option value="Estágio">
+                                        Estágio
+                                    </option>
+
+                                    <option value="Emprego">
+                                        Emprego
+                                    </option>
+
+                                    <option value="Jovem Aprendiz">
+                                        Jovem Aprendiz
+                                    </option>
+
+                                    <option value="Bolsa">
+                                        Bolsa
+                                    </option>
+
+                                    <option value="Outro">
+                                        Outro
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =========================
+                         CURRÍCULO
+                    ========================= -->
+
+                    <div class="secao">
+
+                        <h3>
+                            Currículo
+                        </h3>
+
+
+                        <div class="curriculo">
+
+                            <p>
+                                Envie seu currículo em PDF para facilitar suas candidaturas.
+                            </p>
+
+
+                            <input
+                                type="file"
+                                id="curriculo"
+                                accept=".pdf"
+                                hidden
+                            >
+
+
+                            <button
+                                type="button"
+                                class="botao-curriculo"
+                                id="botaoCurriculo"
+                            >
+                                📄 Selecionar currículo
+                            </button>
+
+
+                            <span
+                                id="nomeCurriculo"
+                                class="nome-curriculo"
+                            >
+                                Nenhum currículo selecionado
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =========================
+                         BOTÕES
+                    ========================= -->
+
+                    <div class="botoes">
+
+                        <button
+                            type="submit"
+                            class="botao-salvar"
+                        >
+                            Salvar alterações
+                        </button>
+
+
+                        <button
+                            type="button"
+                            id="cancelar"
+                            class="botao-cancelar"
+                        >
+                            Cancelar
+                        </button>
+
+                    </div>
+                    <p
+                        id="mensagem"
+                        class="mensagem"
+                    ></p>
+
+                </form>
+            </section>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

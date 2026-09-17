@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Empresas - IFPR Conecta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <a href="index.html">
+
+                <img
+                    src="img/logoif.png"
+                    alt="Logo IFPR"
+                    class="logo-img"
+                >
+
+            </a>
+
+            <strong>
+                IFPR Conecta
+            </strong>
+
+        </div>
+
+
+        <nav>
+
+            <a href="vagascidades.html">
+                Voltar
+            </a>
+
+
+            <!-- PERFIL -->
+
+            <div class="perfil-menu">
+
+                <button
+                    class="perfil-botao"
+                    type="button"
+                    id="botaoPerfil"
+                >
+
+                    <img
+                        id="fotoPerfil"
+                        src="img/usuario.png"
+                        alt="Perfil"
+                    >
+
+                </button>
+
+
+                <!-- MENU DO PERFIL -->
+
+                <div
+                    class="menu-dropdown"
+                    id="menuPerfil"
+                >
+
+                    <div class="usuario-info">
+
+                        <img
+                            id="fotoMenu"
+                            src="img/usuario.png"
+                            alt="Foto de perfil"
+                        >
+
+                        <div>
+
+                            <strong id="nomeUsuario">
+                                Carregando...
+                            </strong>
+
+                            <span id="emailUsuario">
+                                Carregando...
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="linha"></div>
+
+
+                    <a href="perfil.html">
+                        👤 Meu perfil
+                    </a>
+
+
+                    <div class="linha"></div>
+
+
+                    <a
+                        href="login.html"
+                        class="sair"
+                        id="botaoSair"
+                    >
+                        ↪ Sair
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         CONTEÚDO
+    ========================= -->
+
+    <main class="conteudo">
+
+        <div class="container">
+
+
+            <!-- =========================
+                 TÍTULO
+            ========================= -->
+
+            <section class="titulo">
+
+                <h1>
+                    Empresas <span>parceiras</span>
+                </h1>
+
+                <p>
+                    Conheça as empresas cadastradas no IFPR Conecta.
+                </p>
+
+            </section>
+
+
+
+            <!-- =========================
+                 PESQUISA
+            ========================= -->
+
+            <div class="pesquisa">
+
+                <input
+                    type="text"
+                    id="buscarEmpresa"
+                    placeholder="Busque por empresa, cidade ou área..."
+                >
+
+                <button
+                    type="button"
+                    id="botaoBuscar"
+                >
+                    🔍
+                </button>
+
+            </div>
+
+
+
+            <!-- =========================
+                 LISTA DE EMPRESAS
+            ========================= -->
+
+            <section class="empresas-section">
+
+                <div
+                    id="listaEmpresas"
+                    class="lista-empresas"
+                >
+
+                    <!--
+                        As empresas serão
+                        carregadas pelo JavaScript.
+                    -->
+
+                </div>
+
+
+                <!-- MENSAGEM CASO NÃO ENCONTRE -->
+
+                <p
+                    id="semEmpresas"
+                    class="sem-empresas"
+                    style="display: none;"
+                >
+                    Nenhuma empresa encontrada.
+                </p>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================= -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
