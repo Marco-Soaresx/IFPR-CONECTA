@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vagas e bolsas do IFPR | IFPR Conecta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+
+        <div class="header-inner">
+
+            <a href="index.html" class="brand">
+                <img src="img/logoif.png" alt="Logo IFPR Conecta" class="logo-img">
+                IFPR Conecta
+            </a>
+
+            <nav class="nav">
+                <a href="#" class="active">Vagas</a>
+                <a href="#">Panorama</a>
+                <a href="#">Empresas</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- DESTAQUE -->
+    <section class="hero">
+
+        <div class="hero-inner">
+
+            <p class="hero-kicker">
+                Paraná · IFPR Conecta
+            </p>
+
+            <h1>
+                Sua próxima oportunidade começa aqui.
+            </h1>
+
+            <p>
+                Estágios, empregos, bolsas e projetos de extensão
+                abertos para estudantes do IFPR.
+            </p>
+
+
+            <!-- BUSCA -->
+            <div class="search-bar">
+
+                <div class="search-input-wrap">
+
+                    <svg viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+
+                    </svg>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        class="search-input"
+                        placeholder="Buscar por cargo, empresa ou área..."
+                    >
+
+                </div>
+
+
+                <button class="filter-toggle" id="filterToggle">
+
+                    <svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14v6z"></path>
+
+                    </svg>
+
+                    Filtros
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+   
+    <section class="city-search">
+        <div class="city-box">
+            <h2>
+                Busque vaga por <span>cidades</span>
+            </h2>
+            <div class="map-image">
+                <img
+                    src="img/mapaif's.png"
+                    alt="Mapa dos campi do IFPR"
+                    class="mapa-ifpr"
+                    usemap="#mapaIFPR"
+                >
+            </div>
+                <map name="mapaIFPR">
+
+                <area
+                    shape="circle"
+                    coords="286,132,14"
+                    href="vagascidades.html?cidade=Umuarama"
+                    alt="Umuarama"
+                    title="Umuarama"
+                >
+
+                <area
+                    shape="circle"
+                    coords="376,79,14"
+                    href="vagascidades.html?cidade=Paranavaí"
+                    alt="Paranavaí"
+                    title="Paranavaí"
+                >
+
+                <area
+                    shape="circle"
+                    coords="494,80,14"
+                    href="vagascidades.html?cidade=Astorga"
+                    alt="Astorga"
+                    title="Astorga"
+                >
+
+                <area
+                    shape="circle"
+                    coords="550,83,14"
+                    href="vagascidades.html?cidade=Arapongas"
+                    alt="Arapongas"
+                    title="Arapongas"
+                >
+
+                <area
+                    shape="circle"
+                    coords="737,91,14"
+                    href="vagascidades.html?cidade=Jacarezinho"
+                    alt="Jacarezinho"
+                    title="Jacarezinho"
+                >
+
+                <area
+                    shape="circle"
+                    coords="314,193,14"
+                    href="vagascidades.html?cidade=Assis Chateaubriand"
+                    alt="Assis Chateaubriand"
+                    title="Assis Chateaubriand"
+                >
+
+                <area
+                    shape="circle"
+                    coords="325,186,14"
+                    href="vagascidades.html?cidade=Goioerê"
+                    alt="Goioerê"
+                    title="Goioerê"
+                >
+
+                <area
+                    shape="circle"
+                    coords="515,186,14"
+                    href="vagascidades.html?cidade=Ivaiporã"
+                    alt="Ivaiporã"
+                    title="Ivaiporã"
+                >
+
+                <area
+                    shape="circle"
+                    coords="598,141,14"
+                    href="vagascidades.html?cidade=Londrina"
+                    alt="Londrina"
+                    title="Londrina"
+                >
+
+                <area
+                    shape="circle"
+                    coords="684,182,14"
+                    href="vagascidades.html?cidade=Telêmaco Borba"
+                    alt="Telêmaco Borba"
+                    title="Telêmaco Borba"
+                >
+
+                <area
+                    shape="circle"
+                    coords="812,187,14"
+                    href="vagascidades.html?cidade=Jaguariaíva"
+                    alt="Jaguariaíva"
+                    title="Jaguariaíva"
+                >
+
+                <area
+                    shape="circle"
+                    coords="217,237,14"
+                    href="vagascidades.html?cidade=Toledo"
+                    alt="Toledo"
+                    title="Toledo"
+                >
+
+                <area
+                    shape="circle"
+                    coords="483,245,14"
+                    href="vagascidades.html?cidade=Pitanga"
+                    alt="Pitanga"
+                    title="Pitanga"
+                >
+
+                <area
+                    shape="circle"
+                    coords="252,281,14"
+                    href="vagascidades.html?cidade=Cascavel"
+                    alt="Cascavel"
+                    title="Cascavel"
+                >
+
+                <area
+                    shape="circle"
+                    coords="74,329,14"
+                    href="vagascidades.html?cidade=Foz do Iguaçu"
+                    alt="Foz do Iguaçu"
+                    title="Foz do Iguaçu"
+                >
+
+                <area
+                    shape="circle"
+                    coords="292,302,14"
+                    href="vagascidades.html?cidade=Quedas do Iguaçu"
+                    alt="Quedas do Iguaçu"
+                    title="Quedas do Iguaçu"
+                >
+
+                <area
+                    shape="circle"
+                    coords="194,367,14"
+                    href="vagascidades.html?cidade=Capanema"
+                    alt="Capanema"
+                    title="Capanema"
+                >
+
+                <area
+                    shape="circle"
+                    coords="150,430,14"
+                    href="vagascidades.html?cidade=Barracão"
+                    alt="Barracão"
+                    title="Barracão"
+                >
+
+                <area
+                    shape="circle"
+                    coords="327,396,14"
+                    href="vagascidades.html?cidade=Coronel Vivida"
+                    alt="Coronel Vivida"
+                    title="Coronel Vivida"
+                >
+
+                <area
+                    shape="circle"
+                    coords="654,300,14"
+                    href="vagascidades.html?cidade=Irati"
+                    alt="Irati"
+                    title="Irati"
+                >
+
+                <area
+                    shape="circle"
+                    coords="569,409,14"
+                    href="vagascidades.html?cidade=União da Vitória"
+                    alt="União da Vitória"
+                    title="União da Vitória"
+                >
+
+                <area
+                    shape="circle"
+                    coords="824,313,14"
+                    href="vagascidades.html?cidade=Campo Largo"
+                    alt="Campo Largo"
+                    title="Campo Largo"
+                >
+
+                <area
+                    shape="circle"
+                    coords="915,290,14"
+                    href="vagascidades.html?cidade=Colombo"
+                    alt="Colombo"
+                    title="Colombo"
+                >
+
+                <area
+                    shape="circle"
+                    coords="929,318,14"
+                    href="vagascidades.html?cidade=Pinhais"
+                    alt="Pinhais"
+                    title="Pinhais"
+                >
+
+                <area
+                    shape="circle"
+                    coords="860,360,14"
+                    href="vagascidades.html?cidade=Curitiba"
+                    alt="Curitiba"
+                    title="Curitiba"
+                >
+
+                <area
+                    shape="circle"
+                    coords="950,372,14"
+                    href="vagascidades.html?cidade=São José dos Pinhais"
+                    alt="São José dos Pinhais"
+                    title="São José dos Pinhais"
+                >
+
+                <area
+                    shape="circle"
+                    coords="1061,336,14"
+                    href="vagascidades.html?cidade=Paranaguá"
+                    alt="Paranaguá"
+                    title="Paranaguá"
+                >
+
+                <area
+                    shape="circle"
+                    coords="451,463,14"
+                    href="vagascidades.html?cidade=Palmas"
+                    alt="Palmas"
+                    title="Palmas"
+                >
+
+            </map>
+            
+        </div>
+    </section>
+    <section class="faq">
+
+        <div class="faq-title">
+            <h2>
+                Perguntas frequentes
+                sobre o IFPR Conecta
+            </h2>
+        </div>
+
+            <div class="faq-list">
+                <details>
+                    <summary>O que é o IFPR Conecta?</summary>
+                    <p>
+                        Uma plataforma para conectar alunos do IFPR
+                        a oportunidades.
+                    </p>
+                </details>
+                <details>
+                    <summary>
+                        Como procurar vagas no IFPR Conecta?
+                    </summary>
+                    <p>
+                        Utilize os filtros disponíveis para encontrar
+                        oportunidades.
+                    </p>
+                </details>
+                <details>
+                    <summary>
+                        Quais tipos de vagas encontro no IFPR Conecta?
+                    </summary>
+                    <p>
+                        Estágios, empregos e projetos relacionados
+                        às áreas dos cursos.
+                    </p>
+                </details>
+                <details>
+                    <summary>
+                        Qual o intuito da plataforma?
+                    </summary>
+
+                    <p>
+                        Facilitar a conexão entre estudantes e
+                        empresas.
+                    </p>
+                </details>
+            </div>
+        </section>
+    <footer>
+        <p>© 2026 IFPR Conecta</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
